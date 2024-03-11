@@ -1,0 +1,428 @@
+/* =========== Template Information Start =========== */
+/* 
+Template Name: Aytor
+Author: Aytor
+Version: 1.0.0
+Designed By: Aytor
+Developed By:
+Author URI: 
+Description:  Aytor is a clean and modern responsive HTML5 template with powerful features.
+*/
+/* =========== Template Information End =========== */
+
+/* =========== Table of Content Start =========== */
+/* 
+0.0) Common Section CSS
+============================================
+0.1) Header Area
+    0.1.1) Tob Bar
+    0.1.2) Nav Bar
+0.2) Page Heading
+0.3) Features
+0.4) Footer
+0.5) Copyright
+0.6) Product Card
+1.Home Page Css
+============================================
+1.1) Banner
+1.2) Featured Category
+1.3) New Arrivals Products
+1.4) Discount Ads Banner
+1.5) Best Sellers Product
+1.6) Deals of the Day
+1.7) Special Offer
+1.8) Latest News
+*/
+/* =========== Table of Content End =========== */
+:root {
+    --text-color: #11161e;
+    --hover-dark-color: #151a32;
+    --light-color: #ffffff;
+    --dark-color: #000000;
+    --primary-color-light: #ff6f61;
+    --primary-color-dark: #ff5645;
+    --paragraph-color: #444444;
+    --bg-color-light: #f1f1f1;
+    --bg-color-dark: #f1f3f4;
+    --border-color: #8c8c8c;
+    --box-shadow-22: 0 3px 10px 0 rgba(0, 0, 0, 0.08);
+    --box-shadow-32: 0 0 50px 0 rgba(21, 26, 50, 0.1);
+    --box-shadow-42: 0 5px 30px 0 rgba(17, 22, 30, 0.08);
+    --primary-font: "Josefin Sans", sans-serif;
+    --body-font: "Roboto", sans-serif;
+}
+body {
+    font-family: var(--body-font);
+}
+h1, h2, h3, h4, h5, h6, a, button{
+    font-family: var(--primary-font);
+    
+}
+ul, li{
+    list-style: none;
+}
+.container{
+    width: 1320;
+    margin: auto;
+}
+/* =========== Tob Bar Section Css Start =========== */
+#top_bar {
+    background-color: var(--hover-dark-color);
+    color: var(--light-color);
+    padding: 11px;
+}
+#top_bar .top_bar_left p {
+    font-size: 16px;
+    line-height: 28px;
+}
+#top_bar .top_bar_left p i,
+#top_bar .top_bar_left p span:last-child {
+    color: var(--primary-color-light);
+}
+#top_bar .top_bar_left p span:first-child {
+    text-transform: uppercase;
+}
+#top_bar .top_bar_right ul.social_icon li a {
+    display: inline-block;
+    font-size: 20px;
+    padding: 0 10px;
+    color: var(--light-color);
+    transition: 0.4s;
+}
+#top_bar .top_bar_right ul:first-child li {
+    padding: 0 20px;
+    border-right: 1px solid var(--border-color);
+}
+#top_bar .top_bar_right ul:first-child li a {
+    font-size: 16px;
+    line-height: 28px;
+    color: var(--light-color);
+    transition: 0.4s;
+}
+#top_bar .top_bar_right ul:first-child li:hover a {
+    color: var(--primary-color-light);
+}
+#top_bar .top_bar_right ul:first-child li select {
+    background: none;
+    color: var(--light-color);
+    border: none;
+    font-size: 16px;
+    line-height: 28px;
+    cursor: pointer;
+}
+#top_bar .top_bar_right ul:first-child li select option {
+    background-color: var(--light-color);
+    color: var(--text-color);
+}
+#top_bar .top_bar_right ul.social_icon {
+    margin-left: 20px;
+}
+#top_bar .top_bar_right ul.social_icon li:hover a {
+    color: var(--primary-color-light);
+}
+/* =========== Tob Bar Section Css End =========== */
+
+/* =========== Nav Bar Section Css Start =========== */
+
+#nav #primary_nav ul li a{
+    font-size: 16px;
+    line-height: 26px;
+    text-transform: capitalize;
+    padding: 37px 21.5px;
+    color: var(--text-color);
+    transition: .4s;
+}
+#nav #primary_nav ul li:hover a{
+    color: var(--primary-color-dark);
+}
+#nav #primary_nav ul li button {
+    background: none;
+    border: none;
+    font-size: 24px;
+    color: var(--hover-dark-color);
+    cursor: pointer;
+    padding: 37px 10px;
+    transition: 0.4s;
+    position: relative;
+}
+#nav #primary_nav ul li button:hover{
+    color: var(--primary-color-dark);
+}
+#nav #primary_nav ul li button span {
+    position: absolute;
+    right: 4px;
+    top: 38px;
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    background: var(--primary-color-light);
+    border-radius: 50%;
+    text-align: center;
+    line-height: 17px;
+    align-items: center;
+    font-size: 14px;
+    color: var(--light-color);
+}
+/* =========== Nav Bar Section Css End =========== */
+
+/* =========== Hero Area Section Css start =========== */
+#hero_banner{
+margin-bottom: 84px;
+}
+#hero_banner .hero_single_slider{
+    background-size: cover;
+    background-position: center;
+    height: 600px;
+    color: var(--light-color);
+    position: relative;
+    z-index: 1;
+}
+#hero_banner .hero_single_slider::before{
+    content: '';
+    position: absolute;
+    width: 50%;
+    height: 100%;
+    left: 0%;
+    top: 0%;
+    z-index: -1;
+    background: linear-gradient(to right, rgba(2, 5, 19, 0.7) 0%, rgba(2, 4, 17, 0.6175) 22%, rgba(1, 4, 15, 0.5484) 38%, rgba(1, 3, 13, 0.4834) 50%, rgba(0, 0, 0, 0) 100%);
+}
+#hero_banner .hero_single_slider h3{
+    font-size: 18px;
+}
+#hero_banner .hero_single_slider h1{
+    font-size: 50px;
+    padding: 14px 0 16px 0;
+}
+#hero_banner .hero_single_slider p{
+    font-size: 16px;
+    padding-bottom: 29px;
+}
+#hero_banner .hero_single_slider a{
+    background-color: var(--primary-color-light);
+    color: var(--light-color);
+    padding: 13px 35px 13px 35px;
+}
+/* =========== Hero Area Section Css End =========== */
+/* =========== Banner Area Section Css End =========== */
+#banner .banner_card {
+    position: relative;
+}
+#banner .banner_card .overlay {
+    position: absolute;
+    inset: 20px;
+    background-color: rgba(17, 22, 30, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    transform: scale(0);
+    transition: .5s;
+}
+#banner .banner_card:hover .overlay{
+    transform: scale(1);
+}
+#banner .banner_card .overlay h2{
+    font-size: 30px;
+    font-family: var(--primary-font);
+    color: var(--light-color);
+    padding-bottom: 12px;
+}
+#banner .banner_card .overlay a{
+    color: var(--light-color);
+    cursor: pointer;
+}
+/* =========== Banner Area Section Css End =========== */
+
+/* =========== Banner Area Section Css End =========== */
+#Featured{
+    margin-top: 65px;
+}
+#Featured h2{
+    text-align: center;
+    margin-bottom: 34px;
+    font-size: 36px;
+    
+}
+#Featured .Featured_items{
+    position: relative;
+    
+}
+#Featured .Featured_items .featured_info{
+ text-align: center;
+ 
+}
+#Featured .Featured_items .featured_info span{
+    padding-top: 24px;
+    font-size: 16px;
+}
+#Featured .Featured_items .featured_info a{
+    color: var(--text-color);
+    padding-top: 5px;
+    padding-bottom: 11px;
+    font-size: 20px;
+    font-family: var(--primary-font);
+    font-weight: bold;
+}
+#Featured .Featured_items .star{
+   color: var(--primary-color-light);
+}
+#Featured .Featured_items .overlay_buttons{
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    transform: scale(0);
+    transition: .4s;
+    
+}
+#Featured .Featured_items .overlay_buttons i{
+    padding: 10px 0;
+}
+#Featured .Featured_items:hover .overlay_buttons{
+    transform: scale(1);
+}
+/* =========== Banner Area Section Css End =========== */
+
+/* =========== Discount Area Section Css End =========== */
+#discount_banner{
+    position: relative;
+    margin-top: 100px;  
+}
+#discount_banner .discount_banner_info{
+    position: absolute;
+    top: 0;
+    color: var(--light-color);
+    
+}
+#discount_banner .discount_banner_info h5{
+  padding-top: 80px;
+}
+#discount_banner .discount_banner_info p{
+    font-size: 10px;
+    padding-top: 10px;
+    padding-bottom: 30px;
+}
+#discount_banner .discount_banner_info button{
+    background:none ;   
+    border:1px solid var(--light-color);
+    padding: 13px 31px;
+    font-size: 10px;
+    color: var(--light-color);
+    text-align: center;
+    cursor: pointer;
+}
+/* =========== Discount Area Section Css End =========== */
+
+/***** Promotion Section Start *****/ 
+#Promotion {
+    transform: translateY(50%);
+}
+#Promotion .container{
+    background-color: var(--light-color);
+    box-shadow: var(--box-shadow-32);
+    padding: 30px 0;
+}
+#Promotion .promotion_card .promotion_card-img{
+    background-color: var(--primary-color-light);
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 70px;
+    margin-right: 10px;
+}
+
+#Promotion .promotion_card {
+    border-right: 4px solid var(--bg-color-light);
+    padding: 21px 0;
+    
+}
+#Promotion .promotion_card:last-child {
+    border-right-color: transparent;
+}
+#Promotion .promotion_card:nth-child(3) .promotion_card_info p{
+ font-size: 14px;
+}
+/*****Promotion Section End *****/
+
+/*****Footer Area Start *****/ 
+#footer {
+    background-color: var(--text-color);
+    padding-top: 150px;
+    
+}
+#footer .footer_upper {
+    padding-bottom: 70px;
+    border-bottom: 1px solid var(--bg-color-light);
+}
+#footer .social_icon ul {
+    gap: 10px;
+}
+
+#footer .social_icon ul li a {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    background: var(--primary-color-light);
+    font-size: 24px;
+    color: var(--paragraph-color);
+    background-color: var(--light-color);
+    text-align: center;
+    line-height: 40px;
+    transition: 0.4s;
+}
+#footer .social_icon ul li a:hover {
+    color: var(--light-color);
+    background-color: var(--primary-color-light);
+}
+
+.footer_lower{
+    color: var(--light-color);
+    padding: 70px 0;
+    font-family: sans-serif;
+    
+}
+.footer_lower b{
+    font-size: 24px;
+    font-family: var(--primary-font);
+}
+.footer_lower ul,
+.footer_lower p{
+    padding-top: 22px;
+}
+.footer_lower .my_account ul li:hover,
+.footer_lower .support ul li:hover{
+    color: var(--primary-color-light);
+    transition: .4s;
+    cursor: pointer;
+}
+.footer_lower ul li{
+    font-size: 12px;
+    padding-bottom: 2px;
+}
+.footer_lower .news_letter p{
+    font-size: 12px;
+    width: 320px;
+    padding: 22px 0;
+}
+.footer_lower .contact_us i{
+    color: var(--primary-color-light);
+}
+.footer_lower .news_letter input{
+    background-color:var(--bg-color-light);
+    color: #8F8F8F;
+    padding: 11px 0 11px 10px;
+    border: none;
+    font-size: 16px;
+}
+.footer_lower .news_letter button{
+    font-size: 18px;
+    background-color: var(--primary-color-light);
+    color: #fff;
+    padding: 11px 17px 8px 17px;
+    margin-left: -4px;
+    border: none;
+}
+/*****Footer Area End *****/
+
+
